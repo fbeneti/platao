@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Aula 6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <form action="pagina.html" method="POST">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99"><br>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco"><br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" value="São Caetano do Sul"><br>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" min="0" max="100" step="1"><br>
+            <label for="quantidade">Quantidade:</label>
+            <input type="range" name="qtde" id="qtde" min="0" max="100" step="0.5" oninput="valor_qtde.value = qtde.value">
+            <output name="valor_qtde" id="valor_qtde">50</output><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="telefone">Telefone:</label>
+            <input type="telefone" name="telefone" id="telefone"><br>
+            <label for="site">Site:</label>
+            <input type="site" name="site" id="site"><br>
+            
+            
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data"><br>
+            <label for="data_hora">Data e Hora:</label>
+            <input type="datetime-local" name="data_hora" id="data_hora"><br>
+            
+            <label>Linguagens:</label>
+            <input type="checkbox" name="linguagens">Java<br>
+
+
+            <Label>sexo</Label>
+            <input type="radio" name="sexo">Masculino
+
+
+            <select id="estado" name="estado" id="estado">
+                <option value="SP" selected>São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select><br>
+
+            autocomplete:
+            <datalist id="comidas">
+                <option value="Lasanha">Lasanha</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Sopa">Sopa</option>
+            </datalist>
+
+            <input id="comida_preferida" name="comida_preferida" type="text" list="comidas">
+            
+            <input type="color" name="cor" id="cor"><br>
+
+                       
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha"><br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="30"><br>
+            
+            <input type="file"> 
+                       
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+
+    </body>
+</html>
