@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Avaliação N1</title>
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">CURSO - PROGRAMAÇÃO EM SCRIPT</h1>
+
+            <div class="cabecalho__menu">
+                <a class=cabecalho__menu__link href="../index.html">Página Inicial</a>
+                <a class=cabecalho__menu__link href="sobre.html">Sobre o Curso</a>
+            </div>
+        </header>
+
+        <main class="contato"> 
+            <div class="contato__conteudo">
+                <h1 class="contato__conteudo__titulo">CONTATO</h1>
+                <p class="contato__conteudo__texto">Em caso de dúvidas, sugestões, elogios ou comentários sobre o curso de <b><i>PROGRAMAÇÃO EM SCRIPT</i></b>, entre em contato pelo formulário abaixo.</p>
+                <form class="formulario", name='frm' method='POST' action="mailto:email@contato.com.br?subject=Contato via formulario">
+                    <table class="formulario__tabela">
+                        <tr class="formulario__linha">
+                            <td class="formulario__rotulo"><label for="nome">Nome: </label></td>
+                            <td class="formulario__resposta", colspan="3"><input type="text", name="nome", id="nome", size="56", required></td>
+                        </tr>
+                        <tr class="formulario__linha">
+                            <td class="formulario__rotulo"><label for="email">Email: </label></td>
+                            <td class="formulario__resposta", colspan="3"><input type="email", name="email", id="email", size="56", placeholder="email@email.com.br"></td>
+                        </tr>
+
+                        <tr class="formulario__linha">
+                            <td class="formulario__rotulo"><label for="sexo">Sexo: </Label></td>
+                            <td class="formulario__resposta"><select name="sexo", id="sexo">
+                                    <option value="0" selected>selecione</option>
+                                    <option value="MC">Masculino Cisgênero</option>
+                                    <option value="FC">Feminino Cisgênero</option>
+                                    <option value="MT">Masculino Transgênero</option>
+                                    <option value="FT">Feminino Transgênero</option>
+                                    <option value="ND">Não declarado</option>                    
+                                </select></td>
+                            <td class="formulario__rotulo"><label for="idade">Idade: </label></td>
+                            <td class="formulario__resposta"><input type="number", name="idade", id="idade", size="5", min="0", max="100", step="1"></td>
+                        </tr>
+
+                        <tr class="formulario__linha">
+                            <td class="formulario__rotulo"><label for="telefone">Telefone: </label></td>
+                            <td class="formulario__resposta"><input type="telefone", name="telefone", id="telefone", size="20", placeholder="(99) 9999-9999"></td>
+                            <td class="formulario__rotulo"><label for="celular">Celular: </label></td>
+                            <td class="formulario__resposta"><input type="celular", name="celular", id="celular", size="20", placeholder="(99) 99999-9999", required></td>
+                        </tr>
+
+                        <tr class="formulario__linha">
+                            <td class="formulario__rotulo"><label for="estado">Estado: </Label></td>
+                            <td class="formulario__resposta", colspan="3"><select name="estado", id="estado">
+                                <option value="0" selected>selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goias</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="DF">Distrito Federal</option>
+                                </select></td>
+                        </tr>
+
+                        <tr class="formulario__linha">
+                            <td class="formulario__resposta", colspan="4"><label for="mensagem">Digite sua mensagem:</label></td>
+                        </tr>
+                        <tr class="formulario__linha">
+                            <td class="formulario__rotulo"> </td>
+                            <td class="formulario__resposta", colspan="3"><textarea name="mensagem", id="mensagem", rows="8", cols="55", required> </textarea></td>
+                        </tr>
+                        <tr class="formulario__linha">
+                            <td class="formulario__rotulo", colspan="2"><label for="arq">Selecione um arquivo para anexar:</label></td>
+                            <td class="formulario__resposta", colspan="2"><input type="file", name="arq", id="arq", value="arquivo"></td>
+                        </tr>
+                        <tr class="formulario__linha">
+                            <td class="formulario__rotulo"> </td>
+                            <td class="formulario__rotulo"><input type="submit" value="Enviar"></td>
+                            <td class="formulario__resposta"><input type="reset" value="Limpar"></td>
+                            <td class="formulario__resposta"> </td>
+                        </tr>
+                    </table>
+                </form>
+        
+                
+            </div>
+        </main>
+   
+    </body>
+
+
+</html>
