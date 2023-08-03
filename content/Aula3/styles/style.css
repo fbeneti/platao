@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    margin:             0;
+    background-color:   white;
+    font-family:        -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:         justify;
+    text-justify:       inter-word;
+    line-height:        1.8;
+}
+
+body img {
+    width:              60%;
+    height:             auto;
+}
+
+.header {
+    background-color:   white;
+    padding:            20px;
+    text-align:         center;
+}
+
+.header h1 {
+    font-size:          40px;
+    text-align:         center;
+}
+
+.topnav {
+    overflow:           hidden;
+    background-color:   #333;
+    padding-left:       15%;
+}
+
+.topnav a {
+    float:              left;
+    display:            block;
+    color:              #f2f2f2;
+    text-align:         center;
+    padding:            14px 16px;
+    text-decoration:    none;
+}
+
+.topnav a:hover {
+    background-color:   #ddd;
+    color:              black;
+}
+
+.content {
+    padding-top:        2%;
+    padding-left:       15%;
+    padding-right:      15%;
+}
+
+.footer {
+    background:         #ddd;
+    padding-top:        10px;
+    padding-left:       20%;
+    padding-right:      20%;
+    padding-bottom:     10px;    
+}
+
+.destaque {
+	border:             1px; 
+    border:             solid;   
+    border:             AliceBlue;
+    background-color:   AliceBlue;
+    padding-top:        1px;
+    padding-left:       20px;
+    padding-right:      20px;
+    padding-bottom:     5px; 
+}
+
+.imagem {
+    color:              Grey;
+    text-align:         center;
+}
+
+.pergunta {
+    margin-left:        30px;
+    font-style:         italic;
+}
+
+.resposta {
+    border:             1px;
+    border:             solid; 
+    border:             #ffe6ff;
+	background-color:   #ffe6ff;
+    padding:            10px;
+    margin-left:        30px;
+    color:              #6d0000;
+    font-family:        "Lucida Console", "Courier New", monospace;
+    text-align:         left;
+}
